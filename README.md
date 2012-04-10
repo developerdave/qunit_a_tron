@@ -1,6 +1,6 @@
-qunit_a_tron [![Build Status](https://secure.travis-ci.org/developerdave/qunit_a_tron.png)](http://travis-ci.org/developerdave/qunit_a_tron)
+# QUnit A Tron [![Build Status](https://secure.travis-ci.org/developerdave/qunit_a_tron.png)](http://travis-ci.org/developerdave/qunit_a_tron)
 
-TODO: Write a gem description
+QUnit A Tron allows you to create the base framework needed to run QUnit tests.
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ qunit init
+
+This will create the QUnit framework.
 
 ## Contributing
 
