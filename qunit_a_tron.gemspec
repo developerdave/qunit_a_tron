@@ -8,10 +8,12 @@ Gem::Specification.new do |s|
   s.summary       = %q{Integrate QUnit tests into your application.}
   s.homepage      = ""
 
-  gem.files         = `git ls-files`.split($\)
-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "qunit_a_tron"
-  gem.require_paths = ["lib"]
-  gem.version       = QunitATron::VERSION
+  s.files         = `git ls-files`.split($\)
+  s.executables   = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
+  s.name          = "qunit_a_tron"
+  s.require_paths = ["lib"]
+  s.version       = QunitATron::VERSION
+
+  s.add_development_dependency "rspec"
 end
