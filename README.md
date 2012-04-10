@@ -1,4 +1,4 @@
-# QunitATron
+qunit_a_tron [![Build Status](https://secure.travis-ci.org/[developerdave]/[qunit_a_tron].png)](http://travis-ci.org/[developerdave]/[qunit_a_tron])
 
 TODO: Write a gem description
 
