@@ -15,5 +15,9 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.version       = QunitATron::VERSION
 
+  s.add_dependency "thor"
+
   s.add_development_dependency "rspec"
+  s.add_development_dependency "cucumber"
+  s.add_development_dependency "aruba"
 end
