@@ -6,7 +6,7 @@ module QUnit
 
     desc "initialise qunit", "Initialises your project with the QUnit framework"
     def init
-      QUnit::Generators::Project.start(["test"])
+      QUnit::Generators::Project.start()
     end
 
   end
