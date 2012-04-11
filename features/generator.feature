@@ -23,8 +23,8 @@ Feature: Generate QUnit Framework
 
         <title>test runner</title>
 
-        <link rel="stylesheet" type="text/css" href="https://github.com/jquery/qunit/raw/master/qunit/qunit.css">
-        <script src="https://github.com/jquery/qunit/raw/master/qunit/qunit.js"></script>
+        <link rel="stylesheet" type="text/css" href="lib/qunit/qunit.css">
+        <script src="lib/qunit/qunit.js"></script>
       </head>
 
       <body>
