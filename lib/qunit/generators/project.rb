@@ -10,7 +10,7 @@ module QUnit
       def create_group
         create_directories(
           %w(test test/fixtures test/lib test/lib/qunit)
-          )
+        )
       end
 
       def copy_qunit_files
