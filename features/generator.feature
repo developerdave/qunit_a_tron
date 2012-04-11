@@ -5,12 +5,11 @@ Feature: Generate QUnit Framework
 
   Scenario: Generate project structure
     When I run `qunit init`
-    Then the following directories should exist:
-      | test                                |
-      | test/fixtures                       |
     Then the following files should exist:
       | test/fixtures/example_fixture.html  |
       | test/test_runner.html               |
+      | test/lib/qunit/qunit.css            |
+      | test/lib/qunit/qunit.js             |
 
   Scenario: Create test_runner.html
     When I run `qunit init`
