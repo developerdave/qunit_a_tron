@@ -11,3 +11,28 @@ Feature: Generate QUnit Framework
     Then the following files should exist:
       | test/fixtures/example_fixture.html  |
       | test/test_runner.html               |
+
+  Scenario: Create test_runner.html
+    When I run `qunit init`
+    Then the file "test/test_runner.html" should contain:
+    """
+    <!DOCTYPE HTML>
+    <html>
+      <head>
+        <meta content-type="utf-8">
+
+        <title>test runner</title>
+
+        <link rel="stylesheet" type="text/css" href="https://github.com/jquery/qunit/raw/master/qunit/qunit.css">
+        <script src="https://github.com/jquery/qunit/raw/master/qunit/qunit.js"></script>
+      </head>
+
+      <body>
+        <h1 id="qunit-header"></h1>
+        <h2 id="qunit-banner"></h2>
+        <div id="qunit-testrunner-toolbar"></div>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
+      </body>
+    </html>
+    """
