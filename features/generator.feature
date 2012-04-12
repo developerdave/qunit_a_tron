@@ -34,6 +34,10 @@ Feature: Generate QUnit Framework
 
         <link rel="stylesheet" type="text/css" href="lib/qunit/qunit.css">
         <script src="lib/qunit/qunit.js"></script>
+
+        <!-- Start of Test Files -->
+        <script src'fixtures/example_test.js'></script>
+        <!-- End of Test Files -->
       </head>
 
       <body>

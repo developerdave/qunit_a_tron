@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" type="text/css" href="lib/qunit/qunit.css">
     <script src="lib/qunit/qunit.js"></script>
+
+    <!-- Start of Test Files -->
+    <%= QUnit::Api.new.test_script_tags %>
+    <!-- End of Test Files -->
   </head>
 
   <body>

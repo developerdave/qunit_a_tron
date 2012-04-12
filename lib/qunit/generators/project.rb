@@ -1,4 +1,5 @@
 require "thor/group"
+require "qunit/api"
 
 module QUnit
   module Generators
@@ -8,29 +9,26 @@ module QUnit
       argument :group, :type => :string
 
       def create_group
-        create_directories(
-          %w(test test/fixtures test/lib test/lib/qunit)
-        )
+        create_directories %w(test test/fixtures test/lib test/lib/qunit)
       end
 
-      def copy_qunit_files
+      def copy_qunit_files 
         template("example_test.js", "test/fixtures/example_test.js")
         template("test_runner.txt", "test/test_runner.html")
         template("lib/qunit/qunit.css", "test/lib/qunit/qunit.css")
-        template("lib/qunit/qunit.js", "test/lib/qunit/qunit.js")
+        template("lib/qunit/qunit.js", "test/lib/qunit/qunit.js") 
       end
 
       def self.source_root
         File.dirname(__FILE__) + "/templates"
       end
 
-      private
-        def create_directories(directories)
-          directories.each do |directory|
-            empty_directory(directory)
-          end
+    private
+      def create_directories(directories)
+        directories.each do |directory|
+          empty_directory(directory)
         end
-
+      end
     end
   end
 end

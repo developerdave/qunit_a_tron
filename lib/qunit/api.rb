@@ -10,5 +10,11 @@ module QUnit
       return files
     end
 
+    def test_script_tags
+      test_files_list.map do |file|
+        "<script src'#{file}'></script>" 
+      end.join("/n") 
+    end
+
   end
 end
