@@ -21,4 +21,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "cucumber"
   s.add_development_dependency "aruba"
   s.add_development_dependency "bahia"
+  s.add_development_dependency "rake"
 end
