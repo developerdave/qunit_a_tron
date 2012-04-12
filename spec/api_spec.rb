@@ -14,6 +14,6 @@ describe QUnit::Api do
     api = QUnit::Api.new
     files = api.test_files_list()
 
-    files.should include('fixtures/example_fixture.html')
+    files.should include('fixtures/example_test.js')
   end
 end

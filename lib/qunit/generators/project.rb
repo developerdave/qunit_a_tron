@@ -14,7 +14,7 @@ module QUnit
       end
 
       def copy_qunit_files
-        template("example_fixture.txt", "test/fixtures/example_fixture.html")
+        template("example_test.js", "test/fixtures/example_test.js")
         template("test_runner.txt", "test/test_runner.html")
         template("lib/qunit/qunit.css", "test/lib/qunit/qunit.css")
         template("lib/qunit/qunit.js", "test/lib/qunit/qunit.js")

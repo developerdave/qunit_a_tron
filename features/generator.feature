@@ -6,7 +6,7 @@ Feature: Generate QUnit Framework
   Scenario: Generate project structure
     When I run `qunit init`
     Then the following files should exist:
-      | test/fixtures/example_fixture.html  |
+      | test/fixtures/example_test.js       |
       | test/test_runner.html               |
       | test/lib/qunit/qunit.css            |
       | test/lib/qunit/qunit.js             |
