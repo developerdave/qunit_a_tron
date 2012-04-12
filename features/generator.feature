@@ -11,6 +11,16 @@ Feature: Generate QUnit Framework
       | test/lib/qunit/qunit.css            |
       | test/lib/qunit/qunit.js             |
 
+  Scenario: Create example test file
+    When I run `qunit init`
+    Then the file "test/fixtures/example_test.js" should contain:
+    """
+    module("example");
+    test("should test the truth", function() {
+      ok(true, "should be true");
+    });
+    """
+
   Scenario: Create test_runner.html
     When I run `qunit init`
     Then the file "test/test_runner.html" should contain:

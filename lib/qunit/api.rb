@@ -4,7 +4,7 @@ module QUnit
     def test_files_list()
       files = []
       Dir.chdir("test") do
-        files = Dir["fixtures/*.html"]
+        files = Dir["fixtures/*.js"]
       end
 
       return files
